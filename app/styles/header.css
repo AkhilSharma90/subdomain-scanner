@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 48px;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 48px;
+    color: green;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 56px;
+    color: green;
+    font-size: 1.1rem;
+}
+
+.about, .source-code {
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .header {
+        justify-content: right;
+    }
+    .header-center {
+        margin-right: 32px;
+    }
+}
